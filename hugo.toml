@@ -1,0 +1,44 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'BJJ notes'
+theme = 'hugo-theme-relearn'
+
+defaultContentLanguage = 'en'
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'BJJ Notes'
+    weight = 1
+    [languages.en.params]
+      subtitle = "BJJ techniques"
+
+  [languages.es]
+    disabled = false
+    languageCode = 'es-ES'
+    languageDirection = 'ltr'
+    languageName = 'Castellano'
+    title = 'Notas de JJB'
+    weight = 3
+    [languages.es.params]
+      subtitle = 'Tecnicas de JJB'
+
+  [languages.cat]
+    disabled = false
+    languageCode = 'es-CAT'
+    languageDirection = 'ltr'
+    languageName = 'Catalan'
+    title = 'Notes de BJJ'
+    weight = 2
+    [languages.cat.params]
+      subtitle = 'Tècniques BJJ'
+
+[params]
+themeVariant = ["zen-dark", "relearn-light", "relearn-dark", "zen-light"]
+
+[outputs]
+home = ["html", "rss", "search", "searchpage"]
+
